@@ -14,11 +14,11 @@ Current State:
 
 Methodology:
 First we find the average gray scale pixel value in each row and column of the image:
-![equation](https://latex.codecogs.com/svg.image?\bg{white}\left<&space;Pixel_{row,i}\right>\frac{1}{N_{col}}\sum_{j=1}^{N_{col}}Pixel(i,j)&space;)
-![equation](https://latex.codecogs.com/svg.image?\bg{white}\left<&space;Pixel_{column,j}\right>\frac{1}{N_{row}}\sum_{i=1}^{N_{row}}Pixel(i,j)&space;)
+![equation](https://latex.codecogs.com/svg.image?\bg{white}\left<&space;Pixel_{row,i}\right>&space;=&space;\frac{1}{N_{col}}\sum_{j=1}^{N_{col}}Pixel(i,j)&space;)
+![equation](https://latex.codecogs.com/svg.image?\bg{white}\left<&space;Pixel_{column,j}\right>&space;=&space;\frac{1}{N_{row}}\sum_{i=1}^{N_{row}}Pixel(i,j)&space;)
 
 The overall mean pixel value of the image:
-![equation](https://latex.codecogs.com/svg.image?\bg{white}\left<&space;Pixel\right>=\frac{1}{N_{row}N_{col}}\sum_{i=1}^{N_{row}}\sum_{j=1}^{N_{col}}Pixel(i,j)&space;)
+![equation](https://latex.codecogs.com/svg.image?\bg{white}\left<&space;Pixel\right>&space;=&space;\frac{1}{N_{row}N_{col}}\sum_{i=1}^{N_{row}}\sum_{j=1}^{N_{col}}Pixel(i,j)&space;)
 
 And the standard deviations of rows and columns:
 ![equation](https://latex.codecogs.com/svg.image?\bg{white}\sigma_{row,i}&space;=&space;\sqrt{\frac{1}{N_{col}}\sum_{j=1}^{N_{col}}Pixel(i,j)-\left<Pixel_{row,i}\right>}&space;)
