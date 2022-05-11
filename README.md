@@ -24,6 +24,10 @@ And the standard deviations of rows and columns:
 ![equation](https://latex.codecogs.com/png.image?\dpi{120}\bg{white}\sigma_{row,i}&space;=&space;\sqrt{\frac{1}{N_{col}}\sum_{j=1}^{N_{col}}Pixel(i,j)-\left<Pixel_{row,i}\right>}&space;)
 ![equation](https://latex.codecogs.com/png.image?\dpi{120}\bg{white}\sigma_{column,j}&space;=&space;\sqrt{\frac{1}{N_{row}}\sum_{i=1}^{N_{row}}Pixel(i,j)-\left<Pixel_{column,j}\right>}&space;)
 
+We consider a row/column to be an edge if the following condition is true:
+![equation](https://latex.codecogs.com/svg.image?\left<&space;Pixel_{row,i}\right>&space;>&space;\left<&space;Pixel&space;\right>&space;&plus;&space;1.25&space;\sigma_{row,i})
+![equation](https://latex.codecogs.com/svg.image?\left<&space;Pixel_{column,j}\right>&space;>&space;\left<&space;Pixel&space;\right>&space;&plus;&space;1.25&space;\sigma_{column,j})
+
 
 5. We can overlay this new grid ontop of the original image:
 ![alt text](https://github.com/mlitton10/piChess/blob/main/test_images/board_with_clean_edges.jpeg?raw=true)
