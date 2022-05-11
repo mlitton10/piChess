@@ -22,7 +22,7 @@ The overall mean pixel value of the image:
 
 And the standard deviations of rows and columns:
 ![equation](https://latex.codecogs.com/svg.image?\bg{white}\sigma_{row,i}&space;=&space;\sqrt{\frac{1}{N_{col}}\sum_{j=1}^{N_{col}}Pixel(i,j)-\left<Pixel_{row,i}\right>}&space;)
-![equation](https://latex.codecogs.com/svg.image?\bg{white}\sigma_{column,j}&space;=&space;\sqrt{\frac{1}{N_{row}}\sum_{i=1}^{N_{row}}Pixel(i,j)-\left<Pixel_{column,j}\right>}&space;)
+![equation](https://latex.codecogs.com/png.image?\dpi{120}\bg{white}\sigma_{column,j}&space;=&space;\sqrt{\frac{1}{N_{row}}\sum_{i=1}^{N_{row}}Pixel(i,j)-\left<Pixel_{column,j}\right>}&space;)
 
 
 5. We can overlay this new grid ontop of the original image:
