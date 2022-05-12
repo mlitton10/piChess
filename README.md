@@ -1,6 +1,9 @@
 # piChess
 Capture real time images of chess games and convert them to into FEN strings for stockfish analysis
 
+A good paper:
+https://mdpi-res.com/d_attachment/jimaging/jimaging-07-00094/article_deploy/jimaging-07-00094-v2.pdf?version=1622796868
+
 Current State:
 
 1. Start with image of chess board:
