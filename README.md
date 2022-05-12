@@ -29,11 +29,18 @@ We consider a row/column to be an edge if the following condition is true:
 ![equation](https://latex.codecogs.com/png.image?\dpi{120}\bg{white}\left<&space;Pixel_{column,j}\right>&space;>&space;\left<&space;Pixel&space;\right>&space;&plus;&space;1.25&space;\sigma_{column,j})
 
 
-5. We can overlay this new grid ontop of the original image:
+4. We can overlay this new grid ontop of the original image:
 ![alt text](https://github.com/mlitton10/piChess/blob/main/test_images/board_with_clean_edges.jpeg?raw=true)
 
-6. Next, we can use this grid to find corners in the image using some algorithm. I tried out Harris Corner detection for now but there are a few options
+5. Next, we can use this grid to find corners in the image using some algorithm. I tried out Harris Corner detection for now but there are a few options
 ![alt text](https://github.com/mlitton10/piChess/blob/main/test_images/corners_only_image.jpeg?raw=true)
 
-7.Finally, we can overlay these corners onto the original image:
+
+6.Finally, we can overlay these corners onto the original image:
 ![alt text](https://github.com/mlitton10/piChess/blob/main/test_images/board_with_corners.jpeg?raw=true)
+
+
+The above methodology will fail for skewed images or images where the board is rotated in frame. The failure occurs at step 3 since the statistical analysis assumes the camera is top down view. The error will scale with rotation angle or skew. Example of this effect:
+
+
+We can fix this problem by using a Hough transform instead.
