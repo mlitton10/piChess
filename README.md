@@ -4,6 +4,12 @@ Capture real time images of chess games and convert them to into FEN strings for
 A good paper:
 https://mdpi-res.com/d_attachment/jimaging/jimaging-07-00094/article_deploy/jimaging-07-00094-v2.pdf?version=1622796868
 
+There is a major problem evident in this paper:
+  See page 14 figure 12
+  Mean inference time on CPU: 2.11 +- 0.64 s
+  Mean inference time on GPU: 0.35 +- 0.06 s
+The CPU inference time is slow, and we can assume that the rpi4 will be even slower. The CPU used was a 3.20 GHz Intel Core i5-6500 CPU. Rpi is not this good. Most of this time is taken up by the piece classification CNN.
+
 Current State:
 
 1. Start with image of chess board:
